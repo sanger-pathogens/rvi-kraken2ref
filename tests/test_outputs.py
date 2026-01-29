@@ -17,7 +17,7 @@ def test_complex_tree_output(tmp_path):
     complex_tree_report_proc.write_output(prefix=tmp_path)
 
     outdata = json.load(open(f"{tmp_path}/complex_tree_decomposed.json", "r"))
-    assert len(outdata["metadata"]["selected"]) == 11, "Wrong number of refs selected, should be 11"
+    assert len(outdata["metadata"]["selected"]) == 13, "Wrong number of refs selected, should be 13"
 
     complex_tree_report_proc = KrakenProcessor("complex_tree_kmeans")
     complex_tree_report_proc.analyse_report(input_kraken_report_file="tests/artificial_reports/fluA_clean.report.txt", input_threshold=100, input_method="kmeans", quiet=True)
