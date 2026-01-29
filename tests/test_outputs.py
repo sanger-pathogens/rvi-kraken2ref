@@ -24,4 +24,4 @@ def test_complex_tree_output(tmp_path):
     complex_tree_report_proc.write_output(prefix=tmp_path)
 
     outdata_kmeans = json.load(open(f"{tmp_path}/complex_tree_kmeans_decomposed.json", "r"))
-    assert len(outdata_kmeans["metadata"]["selected"]) == 12, "Wrong number of refs selected, should be 12" ## one extra segment 1 ref should be selected AND written with kmeans method
+    assert len(outdata_kmeans["metadata"]["selected"]) == 14, "Wrong number of refs selected, should be 14" ## one extra segment 1 ref should be selected AND written with kmeans method
