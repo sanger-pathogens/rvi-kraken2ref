@@ -35,7 +35,7 @@ def test_complex_tree_report():
     complex_tree_report_proc = KrakenProcessor("complex_tree")
     complex_tree_report_proc.analyse_report(input_kraken_report_file="tests/artificial_reports/fluA_clean.report.txt", input_threshold=100, input_method="max", quiet=True)
 
-    assert sorted(complex_tree_report_proc.tree_meta_out.keys()) == [3149250, 3149251, 3149253, 3185065, 3219756, 3219759, 3285787, 3290795, 3369048, 3514037, 3847902], \
+    assert sorted(complex_tree_report_proc.tree_meta_out.keys()) == [3121649, 3121660, 3149250, 3149251, 3149253, 3185065, 3219756, 3219759, 3285787, 3290795, 3369048, 3514037, 3847902], \
     "Wrong taxIDs appear to be selected, should be [3149250, 3149251, 3149253, 3185065, 3219756, 3219759, 3285787, 3290795, 3369048, 3514037, 3847902]"
 
 def test_l1_tree_report():

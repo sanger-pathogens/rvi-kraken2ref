@@ -36,7 +36,7 @@ class Poll:
             self.parent_selected = True
             self.valid_subterminals = [i for i in taxonomy_tree.subterminal_nodes if data_dict[i][0] > threshold]
             ## if subterminal node is valid, return this info
-            if len(self.valid_subterminals) > 0 and len(self.leaves) > 1:
+            if len(self.valid_subterminals) > 0 and len(self.leaves) >= 1:
                 self.valid_parent = True
                 valid_leaves_dict = {i: data_dict[i] for i in self.leaves}
                 max_freq = max(list(valid_leaves_dict.values()))

@@ -1,5 +1,10 @@
 # Changelog
 
+[2.2.1] 2026-01-30
+---
+### Changed
+- [improvement] Slight change to polling behaviour to catch some edge cases
+
 [2.2.0] 2025-11-10
 ---
 ### Changed
